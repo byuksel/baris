@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Baris Yuksel</title>
+    <meta name="description" content="Baris Yuksel is an engineer, a designer and a wonderer questioning the magical world through software. " />
+    <meta name="Keywords" content="Machine Learning, Design, Google, Baris Yuksel, MIT, Data Art, Machine Learning" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+      function slidemeup() {
+        $(".content-one").slideUp(450);
+        $(".info_content").css("visibility", "hidden");
+        $(".contact_content").css("visibility", "hidden");
+//        $("#output").attr("src", "http://onehundredyearsofcode.tumblr.com");
+      }
+
+      function pagestart() {
+         setTimeout(slidemeup, 500);
+      }
+
+
+    $(document).ready(function() {
+        // Function to toggle mid textarea on and off
+        $(".expand-one").click(slidemeup);
+        // Function for information
+        $("#information").click(function(){
+          $(".info_content").css("visibility", "visible");
+          $(".contact_content").css("visibility", "hidden");
+          $("#output").attr("src","");
+        });
+        // Function for contact
+        $("#contact").click(function(){
+          $(".contact_content").css("visibility", "visible");
+          $(".info_content").css("visibility", "hidden");
+          $("#output").attr("src","");
+        });
+    });
+    </script>
+    <style>
+      .para1 {
+        font-family: Helvetica Neue, Geneva, Arial,  sans-serif; font-size: 14px; color: #333333;
+      }
+      .para2 {
+        margin-left: 110px;
+        padding-left: 0px;}
+      .para3 {
+        padding-left: 0px;
+        float:right;
+      }
+      .para4 {
+        font-family: Helvetica Neue, Geneva, Arial,  sans-serif; font-size: 36px; color: #333333; 
+      }
+      .para5 {
+        font-size: 48px;
+      }
+      .para6 {
+        text-align: right;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      #linkspan a {
+        display: inline-block;
+        text-decoration: none;
+        color: red;
+        font-size: 18px;
+        margin-left: 52px;
+        margin-right: 0px;
+        padding-bottom: 3px;
+      }
+      #linkspan span {
+         float: right;
+      }
+      #linkspan #information,#contact {
+        float:right;
+        color: red;
+        font-size: 18px;
+        margin-left: 52px;
+        margin-right: 0px;
+        padding-bottom: 3px;
+      }
+      #linkspan a:hover,#information:hover,#contact:hover {
+        background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAT0lEQVR42mP4DwX/Xr2EMf8zgIg/a1f+f7Z84f+/h/dDBL/dufn/8dJ5/0/oK/5/t2LR/y+3rkBUvtu94/+LpQv+f9m3C6EdBH48fAg3EwCvOVsL2KRpFAAAAABJRU5ErkJggg==);
+      }
+      #fronttable {
+        width: 80%;
+        max-width: 1140px;
+        min-width: 1140px;
+        border: 0;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .even {
+        background-image:url(data:image/png;base64,R0lGODlhCgAKALMAAP/////Ly/+5uf+Vlf9vb/9LS/8nJ/8DA+4AAMoAAKYAAIIAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAKAAoAAAQ0EEggxJyioHSsFEZxbMogGQYxJglCcceaLIPQInii0MDBsgqFi6IA7kySAWKxQCAvgycgAgA7);
+      }
+      #bigspace {
+        height: 302px;
+        border: 1px solid;
+        margin-top: 30px;
+      }
+      #logo_index_left a:hover{
+        opacity: 0 !important
+      }
+      #output {
+        border: 0;
+        position: absolute;
+        left: 0;
+        right: -100px;
+        font-size: 10pt;
+        height: 1300px;
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x:hidden;
+      }
+      #longspan {
+        margin-left: -9px;
+      }
+      #head {
+        height:200px;
+      }
+      #bio {
+        margin-left: 230px;
+        margin-right: 100px;
+      }
+      .info_content {
+        visibility: hidden;
+     }
+      .contact_content {
+        visibility: hidden;
+    }
+    </style>
+  </head>
+  <body onload="pagestart();">
+    <p class="para5 content-one">&nbsp;</p>
+    <div align="center">
+      <table id="fronttable">
+	<tr>
+          <td><span class="para4">baris y&#252;ksel.</span> 
+              <div class="para1">software engineer. <br/>machine learning lover. <br/>muppets fan.</div> </td>
+
+
+          <td width="70%">
+            <hr id="longspan">   
+
+
+	    <div id="linkspan">
+	      <span>
+		<span class="expand-one" id="contact">contact</a>
+	        </span>
+                <!-- - 
+	      <span>
+		<a href="projects.html" target="output" class="expand-one">projects</a>
+	      </span>
+	      <span>
+		<a href="http://onthecode.com" target="output" class="expand-one">technical writings</a>
+	      </span>
+              -->
+	      <span>
+		<span class="expand-one" id="information">information</span>
+	      </span>
+              <!-- - 
+	      <span>
+		<a href="http://onehundredyearsofcode.tumblr.com" target="output" class="expand-one">blog</a>
+	      </span>
+              -->
+	    </div>
+
+            </td>
+	  </tr>
+	  <tr >
+	    <td colspan="2">
+	      <div class="content-one" align="center" id="bigspace"></div>
+	      </td>
+	  </tr>
+	  <tr>
+	    <td colspan=2>
+	      <iframe name="output" id="output"></iframe>
+	      </td>
+	  </tr>
+      <tr class="info_content">
+        <td colspan="2">
+	  <div style="float:left">
+            <img id="head" alt="Baris Yuksel" src="barisyuksel.jpg"/>
+	    <div class="para1">Photo by: Bora Yuksel</div>
+          </div>
+	  <div id="bio">
+            <p class="para1 para2">
+              Baris Yuksel is an independent consultant and advisor specializing in Machine Learning and Artificial Intelligence. Baris has been focusing on designing and developing next generation features and technologies, trying to create magic moments. 
+            </p><p class="para1 para2">
+Baris worked various teams during his 8 years at Google. Most recently, he was at Google Translate team collaborating with the Google Brain team to migrate Google Translate onto the new deep learning platform. Prior to that, Baris led the engineering team for Project Shield at Google Jigsaw, building a free reverse proxy for protecting newspapers against DDoS attacks. Baris also worked on Google Search with Craig Nevill-Manning, founder of Google New York. His work helped bridging the world between Search and Google Now Assistant making smart news article suggestions and developing recommendation systems. Prior to joining Search, Baris started and lead maps spam team at Google Maps. The spam team built machine learning algorithms dealing with big data, and designed intelligent systems which detected spam. 
+<!-- - 
+Baris has been a volunteer with ScriptEd teaching high school students with an experimental curriculum, which he has been developing under the guidance of ScriptEd.  
+-->
+Baris has volunteered in Africa at numerous computer science workshops, teaching new technologies to African college professors. He has an ongoing passion for spreading the knowledge in developing world to transform human experience for a better tomorrow.
+                 </p><p class="para1 para2">
+Baris graduated from MIT with a BS in Electrical Engineering and Computer Science, minoring in Economics. He is the inventor or co-inventor on several patents. He is a native of Istanbul and he currently resides in New York, NY. He loves the city, and has an avid passion to help building a strong tech community there. Baris loves cooking.
+                </p><p class="para1 para2" style="float:right">
+       	    </p>
+	  </div>
+        </td>
+      </tr>
+      <tr class="contact_content">
+	<td colspan="2">
+	  <p class="para1 para6">baris att barisyuksel dott com </p>
+	  <p class="para1 para6">tweet@baris_wonders</o>
+        </td>
+      </tr> 
+      <tr class="info_content">
+        <td rowspan="" valign="top" class="para1 para3" style="padding-right:30px"><p align="left" class="style13">Selected Patents:</p>
+          <div align="left">
+	    <span>
+              06-13-17 - Document ranking based on entity frequency</br><br>
+              10-27-16 - Notification Engine </br><br>
+              11-24-15 - Systems and methods of correlating business information to determine spam, closed businesses, and ranking signals</br><br>
+              09-15-15 - Systems and methods of detecting keyword-stuffed business titles</br><br>
+              04-27-15 - Identifying terms </br><br>
+              08-18-15 - Method and system for identifying business records</br><br>
+            09-27-11 - Automatic detection of similar business updates by using similarity to past rejected updates</br><br>
+            09-07-11 - Method and system for identifying business records</br><br>
+            12-03-10 - Systems and methods of detecting keyword-stuffed business titles</br><br>
+            10-01-10 - Map spam detection</br><br>
+            </span>
+	  </div> 
+        </td>
+        <td rowspan="2" valign="top" style="padding-left:0px">
+	  <div align="right">
+            <!-- - 
+            <div align="left" class="para1">
+              <p class="para1">Upcoming Talks:</p>
+            </div>
+          </div>                
+          <div align="right" class="para1"  >
+            <p align="left">11-08-17 - <a href="http://technicalcareer.splashthat.com/" target="_blank" style="position:relative; z-index:1"><i>"Making a Career in Technology"</i>,</a> Krash.io @ WeWork, NYC</p>
+	  </div>
+          -->
+	  <div align="right" style="margin-top:50px">
+            <div align="left" class="para1">
+              <p class="para1">Selected Past Talks:</p>
+            </div>
+          </div>                
+	  <div align="right" class="para1"  >
+            <p align="left">03-31-16 - <i>Decoding the Road: Computational Tessellation of Central Asian Architecture</i>, Center For Architecture, American Institute of Architects NY Chapter, NY</p>
+            <p align="left">07-04 to 07-08-16 - <i>Tensorflow Machine Learning Training</i> for Googlers @ Google, Mountain View, California</p>
+            <p align="left">05-07-14 - <a href="http://technicalcareer.splashthat.com/" target="_blank" style="position:relative; z-index:1"><i>"Making a Career in Technology"</i>,</a> Krash.io @ WeWork, NYC</p>
+            <p align="left">05-03-14 - <i>"Machine Learning Workshop"</i>, NYU Polytechnic</p>
+            <p align="left">04-26-14 - <a href="http://tendigi.com/blog/post.php?s=2014-05-01-tech-u-hackathon-recap/" target="_blank" style="position:relative; z-index:1"><i>"Machine Learning Workshop"</i>,</a> Tech Triangle U Hackathon, Brooklyn Tech Triangle</p>
+            <p align="left">03-29-14 - Code For Good, HackDuke, Duke University</p>
+	    <p align="left">03-26-14 - <a href="https://www.facebook.com/events/236699666534666"  target="_blank" style="position:relative; z-index:1"><i>"Software Engineering in Africa"</i>,</a> Gallatin Business Club, NYU</p>
+	    <p align="left">03-21-14 - PearlHacks, University of North Carolina</p>
+            <p align="left">02-27-14 - <i>"Machine Learning Workshop"</i>, Penn WiCS, UPenn</p>
+	    <p align="left">02-22-14 - Keynote speech, BluePrint, MIT</p>
+	    <p align="left">02-14-14 - NYUAD International Hackathon, NYUAD, Abu Dhabi, UAE</p>
+	    <p align="left">02-11-14 - <i>"Innovation and Software Engineering"</i>, University of Zanzibar, Tanzania</p>
+            <p align="left">01-28-14 - Google Tech Talk, UPenn</p>
+            <p align="left">12-10-13 - <i>"Computer Science for High School"</i>, Academy for Software Engineering, NYC </p>
+            <p align="left">12-06-13 - <i>"Machine Learning Workshop"</i>, General Assembly, NYC</p>
+            <p align="left">11-16-13 - HackDuke, Duke University</p>
+            <p align="left">11-15-13 - NYUHacks, NYU</p>
+            <p align="left">10-15-13 - Startups of Puerto Rico, Puerto Rico Center, NYC</p>
+            <p align="left">10-05-13 - HackMIT, MIT</p>
+            <p align="left">09-21-13 - <a href="http://ns.umich.edu/new/multimedia/videos/21705-smart-recycle-bin-wins-record-breaking-mhacks-hackathon" target="_blank" style="position:relative; z-index:1">MHacks, University of Michigan</a></p>
+            <p align="left">09-07-13 - PennApps, UPenn</p>
+            <p align="left">02-02-13 - MHacks, University of Michigan</p>
+            <p align="left">01-19-13 - <a href="http://www.washtenawvoice.com/2013/02/36-hours-at-hackathon/" target="_blank" style="position:relative; z-index:1"><i>"Artificial Intelligence at Google"</i> PennApps, UPenn</p></a>
+            <p align="left">01-19-13 - <i>"Google Maps API"</i> PennApps, UPenn</p>
+            <p align="left">11-16-12 - <a href="https://twitter.com/88mph_Africa/status/269466177087107072"  target="_blank" style="position:relative; z-index:1">88mph Seed Fund,</a> Cape Town, South Africa</p>
+            <p align="left">11-12-12 - <a href="https://sites.google.com/site/gsouthafrica2012/google-team"  target="_blank" style="position:relative; z-index:1"><i>Google Tech Talk on Google Now,</i></a> Google G-South Africa, Cape Town, South Africa</p>
+	    <p align="left">06-28 to 06-30-12 - Google Faculty Training, <i>"Google Technologies Workshop"</i>, Accra, Ghana</p>
+	    <p align="left">06-25 to 06-27-12 - Google Faculty Training, <i>"Google Technologies Workshop"</i>, Lagos, Nigeria</p>
+          </div>
+        </td>
+      </tr>
+      </table>
+
+      <script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-17792956-4']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+      </script>
+    </body>
+  </html>
